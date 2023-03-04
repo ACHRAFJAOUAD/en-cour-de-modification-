@@ -1,0 +1,785 @@
+
+/* ------- Styling Home Page ------- */
+:root {
+    --mainicolor: #8F6554;
+    --secend-color: #E4D0BE;
+    --white-color: #fff;
+    --black-color: #000;
+    --big-font: 2.5rem;
+    --h3-font: 2.2em;
+    --special-titre: 2.9rem;
+}
+
+/* ------- Styling hero Page ------- */
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--mainicolor);
+    clip-path: circle(600px at right 800px);
+    z-index: -1;
+    animation: animateUser 8s linear infinite;
+}
+
+@keyframes animateUser {
+    50% {
+        left: 10px;
+        top: 30px;
+    }
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    width: 90%;
+    height: 80vh;
+    margin: 0 auto;
+
+
+}
+
+
+
+.textbox h2 {
+    color: var(--black-color);
+    font-size: var(--big-font);
+    line-height: 1.4em;
+    font-weight: 700;
+}
+
+.textbox h2 span {
+    font-size: var(--special-titre);
+    font-weight: 900;
+    color: var(--mainicolor);
+}
+
+.textbox p {
+    color: var(--black-color);
+    margin-bottom: 1.9rem;
+    line-height: 1.9rem;
+}
+
+.textbox a {
+    letter-spacing: 3px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: 1px solid var(--mainicolor);
+    border-radius: 10px;
+    padding: 0.6rem 0.9rem;
+    text-decoration: none;
+    background-color: var(--mainicolor);
+    color: var(--white-color);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.textbox a:hover {
+    color: #000;
+    border: 1px solid var(--mainicolor);
+    background-color: var(--white-color);
+}
+
+.content .imgbox {
+    width: 500px;
+    display: flex;
+}
+
+.imgbox img {
+    width: 800px;
+
+    transform: rotateY(180deg);
+    animation: animateUser 4s linear infinite;
+}
+
+
+/* ------- Styling section one ------- */
+.section-one {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+
+}
+
+.section-one h4 {
+    color: var(--mainicolor);
+    padding-top: 80px;
+    font-size: 1.2rem;
+}
+
+.section-one h3 {
+    color: var(--black-color);
+    font-size: var(--h3-font);
+    padding: 5px 0;
+    margin-bottom: 30px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.section-text {
+    padding: 20px 0;
+    align-self: flex-end;
+    text-align: left;
+
+}
+
+.section-text h2 {
+    text-align: center;
+    font-size: var(--special-titre);
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: var(--mainicolor);
+}
+
+.section-text p {
+    font-size: 1rem;
+    line-height: 2.4rem;
+    width: 90%;
+    margin: 30px 0;
+    padding-left: 20px;
+}
+
+.section-text a {
+    letter-spacing: 2px;
+    font-size: 1rem;
+    border: 1px solid var(--mainicolor);
+    border-radius: 20px;
+    font-weight: 500;
+    padding: 0.4rem 0.7rem;
+    margin-left: 20px;
+    text-decoration: none;
+    background-color: var(--mainicolor);
+    color: var(--white-color);
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.section-text a:hover {
+    color: #000;
+    border: 1px solid var(--mainicolor);
+    background-color: var(--white-color);
+}
+
+.section-img {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-img img {
+    border-radius: 5px;
+    height: 350px;
+}
+
+.section-img::before {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    border-radius: 5px;
+    width: 370px;
+    height: 350px;
+    transform: rotate(8deg);
+}
+
+/* ------- Styling section two ------- */
+.section-two {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-text {
+    padding: 20px 0;
+    width: 49%;
+    align-self: flex-end;
+}
+
+.section-text h2 {
+    text-align: center;
+    font-size: var(--special-titre);
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: var(--mainicolor);
+}
+
+.section-text p {
+    font-size: 1rem;
+    line-height: 2.4rem;
+    width: 90%;
+    margin: 30px 0;
+}
+
+.section-text a {
+    letter-spacing: 2px;
+    font-size: 1rem;
+    border: 1px solid var(--mainicolor);
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 0.4rem 0.7rem;
+    text-decoration: none;
+    background-color: var(--mainicolor);
+    color: var(--white-color);
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.section-text a:hover {
+    color: #000;
+    border: 1px solid var(--mainicolor);
+    background-color: var(--white-color);
+}
+
+.section-img {
+    align-self: center;
+    width: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-img img {
+    border-radius: 5px;
+    height: 300px;
+}
+
+.section-img::before {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    border-radius: 5px;
+    width: 310px;
+    height: 300px;
+    border: 3px dashed rgb(105, 105, 105);
+    transform: rotate(8deg);
+}
+
+/* ------- Styling clients section ------- */
+.our-costumers {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.our-costumers h4 {
+    color: var(--mainicolor);
+    padding-top: 80px;
+    font-size: 1.2rem;
+}
+
+.our-costumers h3 {
+    color: var(--black-color);
+    font-size: var(--h3-font);
+    padding: 5px 0;
+}
+
+.cleints {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.cleints .cleint {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.cleints .cleint:hover {
+    box-shadow: 0 2px 15px var(--black-color);
+}
+
+.cleint i {
+    font-size: 4rem;
+    color: var(--mainicolor);
+    margin: 15px 0;
+}
+
+.cleint h5 {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.cleint p {
+    line-height: 25px;
+    margin: 10px;
+}
+
+.our-costumers a {
+    letter-spacing: 2px;
+    font-size: 1.4rem;
+    border: 1px solid var(--mainicolor);
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 0.6rem 0.9rem;
+    text-decoration: none;
+    background-color: var(--mainicolor);
+    color: var(--white-color);
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.our-costumers a:hover {
+    color: #000;
+    border: 1px solid var(--mainicolor);
+    background-color: var(--white-color);
+}
+
+
+/* styling products section */
+.products {
+    background-color: rgb(255, 244, 226);
+    width: 60%;
+    margin: 60px auto;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: var(--big-font);
+    padding: 20px 0;
+}
+
+.products a {
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+    border: 1px solid var(--mainicolor);
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 0.6rem 0.9rem;
+    text-decoration: none;
+    background-color: var(--mainicolor);
+    color: var(--white-color);
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.products a:hover {
+    color: #000;
+    border: 1px solid var(--mainicolor);
+    background-color: var(--white-color);
+}
+
+/* resposivity */
+@media(max-width: 1300px) {
+    :root {
+        --big-font: 2.3rem;
+        --h3-font: 2em;
+        --special-titre: 2.7rem;
+    }
+
+    .circle {
+        clip-path: circle(400px at right 500px);
+    }
+
+    .textbox {
+        width: 400px;
+    }
+
+    .imgbox img {
+        width: 600px;
+    }
+
+    .textbox a {
+        font-size: 1.3rem;
+        border-radius: 10px;
+        padding: 0.5rem 0.7rem;
+        letter-spacing: 2px;
+    }
+
+    .our-costumers a {
+        font-size: 1.3rem;
+        border-radius: 10px;
+        padding: 0.5rem 0.7rem;
+        letter-spacing: 2px;
+    }
+
+    .products a {
+        font-size: 1.3rem;
+        border-radius: 10px;
+        padding: 0.5rem 0.7rem;
+        letter-spacing: 2px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .imgbox {
+        margin-left: 140px
+    }
+
+    .imgbox img {
+        width: 500px;
+    }
+}
+
+@media(max-width: 1100px) {
+    .imgbox {
+        margin-left: 80px
+    }
+
+    .imgbox img {
+        width: 450px;
+    }
+
+    .textbox a {
+        font-size: 1rem;
+        border-radius: 10px;
+        padding: 0.5rem 0.7rem;
+        letter-spacing: 2px;
+    }
+
+    .our-costumers a {
+        font-size: 1rem;
+        border-radius: 10px;
+        padding: 0.5rem 0.7rem;
+        letter-spacing: 2px;
+    }
+
+    .products a {
+        font-size: 1rem;
+        border-radius: 10px;
+        padding: 0.5rem 0.7rem;
+        letter-spacing: 2px;
+    }
+
+    .textbox p {
+        color: var(--black-color);
+        margin-bottom: 1.9rem;
+        line-height: 1.9rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width: 1000px) {
+    :root {
+        --big-font: 2.6rem;
+        --h3-font: 1.8em;
+        --special-titre: 2.9rem;
+    }
+
+    .imgbox img {
+        width: 400px;
+    }
+
+    .section-text p {
+        font-size: 1rem;
+        line-height: 2.1rem;
+        width: 90%;
+        margin: 15px 0;
+        margin-bottom: 30px;
+    }
+
+    .textbox a {
+        font-size: 1rem;
+        border-radius: 10px;
+        padding: 0.5rem 0.7rem;
+        letter-spacing: 2px;
+    }
+
+    .our-costumers a {
+        font-size: 1rem;
+        border-radius: 10px;
+        padding: 0.5rem 0.7rem;
+        letter-spacing: 2px;
+
+    }
+
+    .products a {
+        font-size: 1rem;
+        border-radius: 10px;
+        padding: 0.5rem 0.7rem;
+        letter-spacing: 2px;
+    }
+
+    .textbox p {
+        color: var(--black-color);
+        margin: 1.4rem 0;
+        line-height: 1.8rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 900px) {
+    .imgbox {
+        margin-left: 20px
+    }
+
+    .imgbox img {
+        width: 400px;
+    }
+
+    .section-text p {
+        font-size: 1rem;
+        line-height: 2rem;
+        width: 90%;
+        margin: 15px 0;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 800px) {
+    :root {
+        --big-font: 2.2rem;
+        --h3-font: 1.6em;
+        --special-titre: 2.4rem;
+    }
+
+    .section-text p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        width: 90%;
+        margin: 15px 0;
+        margin-bottom: 30px;
+    }
+
+    .imgbox img {
+        width: 300px;
+    }
+
+
+    .section-img img {
+        border-radius: 5px;
+        height: 250px;
+    }
+
+    .section-img::before {
+        z-index: -1;
+        position: absolute;
+        content: "";
+        border-radius: 5px;
+        width: 260px;
+        height: 250px;
+        border: 3px dashed rgb(105, 105, 105);
+        transform: rotate(9deg);
+    }
+
+    .textbox a {
+        font-size: 1rem;
+        border-radius: 10px;
+        padding: 0.5rem 0.7rem;
+        letter-spacing: 2px;
+    }
+
+    .our-costumers a {
+        font-size: 1rem;
+        border-radius: 10px;
+        padding: 0.5rem 0.7rem;
+        letter-spacing: 2px;
+    }
+
+    .products a {
+        font-size: 1rem;
+        border-radius: 10px;
+        padding: 0.5rem 0.7rem;
+        letter-spacing: 2px;
+    }
+}
+
+@media(max-width: 800px) {
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .circle {
+        display: none;
+        clip-path: circle(140px at center 200px);
+        top: 65%;
+    }
+
+    .textbox {
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textbox :nth-child(3) {
+        align-self: flex-end;
+
+    }
+
+    .imgbox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+
+    }
+
+    .details,
+    .section-two {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .section-text {
+        padding: 20px 0;
+        text-align: left;
+        align-self: center;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .section-text p {
+        font-size: 1rem;
+        line-height: 2rem;
+        width: 90%;
+        margin: 10px 0;
+        margin-bottom: 30px;
+        padding-left: 20px;
+    }
+
+    .section-text a {
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 0.4rem 0.7rem;
+    }
+
+    .section-two .section-img {
+        order: 2;
+    }
+
+}
+
+@media(max-width: 600px) {
+
+    .section-text {
+        width: 80%;
+        text-align: center;
+    }
+
+
+
+    .section-text p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+        margin: 10px auto;
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 501px) {
+    :root {
+        --big-font: 1.9rem;
+        --h3-font: 1.3em;
+        --special-titre: 2.1rem;
+    }
+
+    .textbox {
+        width: 94%;
+    }
+
+
+    .textbox p {
+        font-size: 1rem;
+    }
+
+    .textbox a {
+        font-size: 0.8rem;
+        border-radius: 10px;
+        padding: 0.4rem 0.4rem;
+        letter-spacing: 2px;
+    }
+
+    .our-costumers a {
+        font-size: 0.8rem;
+        border-radius: 10px;
+        padding: 0.4rem 0.4rem;
+        letter-spacing: 2px;
+    }
+
+    .products a {
+        font-size: 0.8rem;
+        border-radius: 10px;
+        padding: 0.4rem 0.4rem;
+        letter-spacing: 2px;
+    }
+
+    .section-text {
+        width: 100%;
+    }
+
+
+
+    .section-text p {
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+        width: 100%;
+    }
+}
+
+@media(max-width: 400px) {
+    :root {
+        --big-font: 1.8rem;
+        --h3-font: 1.2em;
+        --special-titre: 2rem;
+    }
+
+    .section-text {
+        width: 100%;
+    }
+
+    .section-text p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        width: 100%;
+        margin: 10px 0;
+        padding-left: 20px;
+    }
+}
+
+@media(max-width:350px) {
+
+
+    .section-img img {
+        border-radius: 5px;
+        height: 200px;
+
+    }
+
+    .section-img::before {
+        z-index: -1;
+        position: absolute;
+        content: "";
+        border-radius: 5px;
+        width: 210px;
+        height: 200px;
+        border: 3px dashed rgb(105, 105, 105);
+        transform: rotate(9deg);
+
+    }
+}
